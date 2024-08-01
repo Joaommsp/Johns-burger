@@ -85,3 +85,12 @@
   color: #fdfdfd;
   font-weight: 400;
 }
+
+@media (max-width: 425px) {
+  .btn {
+    font-size: 0.775rem;
+    font-weight: 600;
+    padding: 0.5rem 2rem;
+    transition: background-color 0.3s, color 0.3s;
+  }
+}
