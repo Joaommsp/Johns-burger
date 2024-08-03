@@ -295,6 +295,14 @@
   padding: 0 7rem;
 }
 
+.cardBurgerImageContainer {
+  background-image: url(../../public/images/burguer-bg-blur.png);
+  background-size: cover;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+  padding: 2rem 0;
+}
+
 .cardBurger ul li {
   font-weight: 300;
   color: var(--grey-color);

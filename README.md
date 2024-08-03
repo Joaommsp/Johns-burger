@@ -59,7 +59,7 @@ npm run dev
 
 <img src="./public/readme/laptopWithMDPIScreen-1722715513720.jpeg" alt="hero">
 
-<img src="./public/readme/laptopWithMDPIScreen-1722719091779.jpeg" alt="hero">
+<img src="./public/readme/laptopWithMDPIScreen-1722728483164.jpeg" alt="hero">
 
 <img src="./public/readme/laptopWithMDPIScreen-1722719161773.jpeg" alt="hero">
 
