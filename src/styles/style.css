@@ -21,7 +21,7 @@
 .hero {
   width: 100%;
   height: 100%;
-  max-height: 100vh;
+  max-height: 100%;
   background-image: url(../../public/images/bg-hero-wall.png);
   background-size: cover;
   background-repeat: no-repeat;
@@ -144,8 +144,25 @@
   justify-content: flex-start;
   gap: 24px;
 
-  overflow-x: hidden;
+  overflow-x: scroll;
   user-select: none;
+  padding-right: 0;
+  padding: 0 7rem;
+}
+
+.restaurantCardsContainer::-webkit-scrollbar {
+  display: none;
+}
+
+.restaurantCardsContainer {
+  overflow: auto;
+}
+.restaurantCardsContainer::-webkit-scrollbar {
+  display: none;
+}
+
+.restaurantCardsContainer {
+  scrollbar-width: none;
 }
 
 .restaurantCard {
@@ -274,6 +291,8 @@
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
   gap: 24px;
+
+  padding: 0 7rem;
 }
 
 .cardBurger ul li {
@@ -599,9 +618,300 @@
 
 /* =================================================================== */
 
-@media (max-width: 425px) {
+@media (max-width: 680px) {
   .navContainer {
     width: 100%;
+    padding: 0;
+  }
+
+  .hero {
+    padding: 0 0 0 0;
+    max-height: 100%;
+    min-height: 100vh;
+    background-attachment: fixed;
+    background-image: url(../../public/images/hero-bg-mobile.png);
+  }
+
+  .logo-header {
+    width: 24px;
+  }
+
+  .bannerContainer {
+    flex-direction: column;
+    padding: 8rem 0.5rem 4rem 0.5rem;
+    gap: 4rem;
+  }
+
+  .bannerTextContainer {
+    width: 100%;
+    height: 50%;
+  }
+
+  .bannerTextContainer h1 {
+    color: var(--primary-color);
+    font-size: 2rem;
+    font-weight: 600;
+    text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.4);
+  }
+
+  .bannerTextContainer h2 {
+    color: var(--white-color);
+    font-size: 1.25rem;
+    text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.4);
+  }
+
+  .bannerTextContainer p {
+    color: var(--white-color);
+    font-size: 0.875rem;
+    font-weight: 300;
+    width: 85%;
+    text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.2);
+  }
+
+  .bannerSocialLinks {
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 16px;
+  }
+
+  .bannerSocialLinks img {
+    width: 18px;
+  }
+
+  .bannerImageContainer {
+    width: 100%;
+  }
+
+  .bannerImageContainer img {
+    filter: drop-shadow(5px 5px 7px #00000080);
+  }
+
+  .carouselContainer {
+    width: 100%;
+  }
+
+  .carousel-item img {
+    height: 200px;
+    object-fit: cover;
+  }
+
+  .restaurantContainer {
+    padding: 2rem 0;
+  }
+
+  .restaurantCardsContainer {
+    padding: 0 1rem;
+  }
+
+  .restaurantText h2 {
+    font-size: 1.25rem;
+    color: var(--white-color);
+    font-weight: 500;
+  }
+
+  .restaurantText span {
+    color: var(--white-color);
+    font-size: 0.875rem;
+
+    display: flex;
+    align-items: center;
+    font-weight: 300;
+  }
+
+  .restaurantText img {
+    width: 18px;
+    margin-right: 0.5rem;
+  }
+
+  .classigBurgerContent {
+    flex-direction: column;
+  }
+
+  .classicBurgerText {
+    width: 100%;
+  }
+
+  .classicBurgerText h2 {
+    font-size: 1.25rem;
+    color: var(--primary-color);
+  }
+
+  .classicBurgerText p {
+    font-size: 0.875rem;
+    color: var(--white-color);
+    margin-bottom: 2rem;
+    font-weight: 300;
+  }
+
+  .bannerImageContainer {
+    display: flex;
+    justify-content: center;
+  }
+
+  .bannerImageContainer img {
+    width: 80%;
+  }
+
+  .burgerCardsContainer {
+    width: 100%;
+    height: 100%;
+
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 24px;
+    padding: 0 1rem;
+  }
+
+  .burgerCards {
+    padding: 4rem 0;
+  }
+
+  .ifoodContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 4rem 0;
+
+    gap: 4rem;
+  }
+
+  .ifoodMockupContainer {
+    width: 100%;
+    justify-content: center;
+    order: 2;
+  }
+
+  .ifoodMockup {
+    width: 100%;
+    max-width: 256px;
+  }
+
+  .ifoodTextContainer {
+    width: 100%;
+    height: 100%;
+  }
+
+  .ifoodLogo {
+    width: 104px;
+  }
+
+  .promotionCardsContainer {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr;
+    padding: 1rem 1.5rem 2rem 1.5rem;
+    gap: 24px;
+  }
+
+  .promotionCard {
+    width: 100%;
+    height: 256px;
+    border-radius: 5px;
+    padding: 1.5rem;
+  }
+
+  .promotionCard .cardAbout {
+    color: var(--white-color);
+    font-weight: 300;
+    text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.4);
+    margin: 0;
+    font-size: 0.875rem;
+  }
+
+  .promotionCard .cardAbout strong {
+    font-weight: 500;
+    font-size: 0.875rem;
+  }
+
+  .cardTitle {
+    font-size: 1.25rem;
+    color: var(--primary-color);
+    text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.4);
+    font-weight: 400;
+  }
+
+  .promotionContainer h4 {
+    font-size: 1.25rem;
+  }
+
+  .contactContainer {
+    padding: 4rem 0;
+  }
+
+  .contact {
+    width: 100%;
+    height: 100%;
+    flex-direction: column;
+    gap: 2rem;
+  }
+
+  .contactForm {
+    width: 100%;
+  }
+
+  .formAbout h5 {
+    font-size: 1.25rem;
+  }
+
+  .contactInfos {
+    width: 100%;
+  }
+
+  .infos h5 {
+    font-size: 1.25rem;
+  }
+
+  .infos {
+    gap: 1rem;
+    padding: 1.5rem;
+  }
+
+  .infos span {
+    display: flex;
+    align-items: center;
+    color: var(--grey-color);
+    font-weight: 300;
+    font-size: 0.875rem;
+  }
+
+  .infos img {
+    width: 18px;
+  }
+
+  .footerContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .footerLinks {
+    width: 100%;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    flex-direction: column;
+    margin-bottom: 4rem;
+    gap: 36px;
+  }
+
+  .footerLogo {
+    width: 64px;
+    margin-left: 2rem;
+  }
+
+  .aboutMe {
+    padding: 0 2rem;
+  }
+}
+
+@media (min-width: 680px) and (max-width: 900px) {
+  .navContainer {
+    width: 100%;
+    padding: 0;
   }
 
   .hero {
@@ -612,7 +922,7 @@
   }
 
   .logo-header {
-    width: 36px;
+    width: 54px;
   }
 
   .bannerContainer {
@@ -678,6 +988,10 @@
     padding: 2rem 0;
   }
 
+  .restaurantCardsContainer {
+    padding: 0 2rem;
+  }
+
   .restaurantText h2 {
     font-size: 1.25rem;
     color: var(--white-color);
@@ -696,5 +1010,217 @@
   .restaurantText img {
     width: 18px;
     margin-right: 0.5rem;
+  }
+
+  .classigBurgerContent {
+    flex-direction: column;
+  }
+
+  .classicBurgerText {
+    width: 100%;
+  }
+
+  .classicBurgerText h2 {
+    font-size: 1.25rem;
+    color: var(--primary-color);
+  }
+
+  .classicBurgerText p {
+    font-size: 0.875rem;
+    color: var(--white-color);
+    margin-bottom: 2rem;
+    font-weight: 300;
+  }
+
+  .bannerImageContainer {
+    display: flex;
+    justify-content: center;
+  }
+
+  .bannerImageContainer img {
+    width: 80%;
+  }
+
+  .burgerCardsContainer {
+    width: 100%;
+    height: 100%;
+
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 24px;
+    padding: 0 3rem;
+  }
+
+  .burgerCards {
+    padding: 4rem 0;
+  }
+
+  .ifoodContainer {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    padding: 4rem 0;
+
+    gap: 4rem;
+  }
+
+  .ifoodMockupContainer {
+    width: 50%;
+    justify-content: center;
+    order: 2;
+  }
+
+  .ifoodMockup {
+    width: 100%;
+    max-width: 256px;
+  }
+
+  .ifoodTextContainer {
+    width: 50%;
+    height: 100%;
+  }
+
+  .ifoodLogo {
+    width: 104px;
+  }
+
+  .promotionCardsContainer {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr;
+    padding: 1rem 1.5rem 2rem 1.5rem;
+    gap: 24px;
+  }
+
+  .promotionCard {
+    width: 100%;
+    height: 256px;
+    border-radius: 5px;
+    padding: 1.5rem;
+  }
+
+  .promotionCard .cardAbout {
+    color: var(--white-color);
+    font-weight: 300;
+    text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.4);
+    margin: 0;
+    font-size: 0.875rem;
+  }
+
+  .promotionCard .cardAbout strong {
+    font-weight: 500;
+    font-size: 0.875rem;
+  }
+
+  .cardTitle {
+    font-size: 1.25rem;
+    color: var(--primary-color);
+    text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.4);
+    font-weight: 400;
+  }
+
+  .promotionContainer h4 {
+    font-size: 1.25rem;
+  }
+
+  .contactContainer {
+    padding: 4rem 0;
+  }
+
+  .contact {
+    width: 100%;
+    height: 100%;
+    flex-direction: column;
+    gap: 2rem;
+  }
+
+  .contactForm {
+    width: 100%;
+  }
+
+  .formAbout h5 {
+    font-size: 1.25rem;
+  }
+
+  .contactInfos {
+    width: 100%;
+  }
+
+  .infos h5 {
+    font-size: 1.25rem;
+  }
+
+  .infos {
+    gap: 1rem;
+    padding: 1.5rem;
+  }
+
+  .infos span {
+    display: flex;
+    align-items: center;
+    color: var(--grey-color);
+    font-weight: 300;
+    font-size: 0.875rem;
+  }
+
+  .infos img {
+    width: 18px;
+  }
+
+  .footerContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .footerLinks {
+    width: 100%;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-bottom: 4rem;
+    padding-right: 2rem;
+  }
+
+  .footerLogo {
+    width: 64px;
+    margin-left: 2rem;
+  }
+
+  .aboutMe {
+    padding: 0 2rem;
+  }
+
+  .carousel-caption h5 {
+    font-size: 1.25rem;
+  }
+
+  .carousel-caption p {
+    font-size: 0.775rem;
+  }
+}
+
+@media (min-width: 1000px) and (max-width: 1400px) {
+  .burgerCardsContainer {
+    width: 100%;
+    height: 100%;
+
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 24px;
+  }
+}
+
+@media (min-width: 680px) and (max-width: 1000px) {
+  .burgerCardsContainer {
+    width: 100%;
+    height: 100%;
+
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 24px;
   }
 }
