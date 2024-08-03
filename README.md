@@ -1,4 +1,4 @@
-# iPhone 15
+# John´s Burgers
 
 <div align="left">
   <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/figma/figma-original.svg" height="40" alt="figma logo"  />
@@ -28,47 +28,74 @@
 Windows:
 
 ```
-git clone https://github.com/Joaommsp/Johns-burger.git
+git clone https://github.com/Joaommsp/johns-burger.git
 ```
 
 ```
-cd Johns-burger
+cd johns-burger
 ```
 
 ```
-use a extensão Live Server ou semelhante
+npm i
 ```
 
-<img src="./imagens/readme/liverserver.png" alt="..." style="max-width: 100px;">
+```
+npm run dev
+```
+
+## ✏️ Protótipo e Design
+
+<Mockup>Confira o design do projeto feito no Figma
+
+<a  href="https://www.figma.com/design/f8UsUmCg3jb6Yl81SQ12Q9/John%C2%B4s-burger?node-id=0-1&t=65A53hCkWf62Y7yl-1" >
+  <img src="./public/readme/Cover.png" alt="cover">
+</a>
+
+> Clique na imagem para ser encaminhado
 
 ## 💻 Um pouco do projeto
 
-<img src="./imagens/readme/MacBook Pro-1722470550742.jpeg" alt="bx slider">
+<img src="./public/readme/laptopWithMDPIScreen-1722715456313.jpeg" alt="hero">
 
-> Utilização de uma sessão de sliders usando o plugin BxSlider
+<img src="./public/readme/laptopWithMDPIScreen-1722715513720.jpeg" alt="hero">
 
-<a href="https://bxslider.com/"><img  style="max-width: 100px" src="./imagens/readme/bxslider.jpg" alt="bx slider"></a>
+<img src="./public/readme/laptopWithMDPIScreen-1722719091779.jpeg" alt="hero">
 
-> CLique na imagem para acessar a documentação
+<img src="./public/readme/laptopWithMDPIScreen-1722719161773.jpeg" alt="hero">
 
-<img src="./imagens/readme/MacBook Pro-1722470771623.jpeg" alt="bx slider">
+## 📱 Mockup
 
-> Utilização do plugin na galeria de imagens que permite a ampliação da imagem e também uma navegação pela galeria
+<p>Pelo Figma desenvolvi este MockUp para complementar o projeto</p>
 
-<a href="https://dimsemenov.com/plugins/magnific-popup/"><img  style="max-width: 100px" src="./imagens/readme/magnific.jpg" alt="bx slider"></a>
-
-> CLique na imagem para acessar a documentação
-
-<img src="./imagens/readme/MacBook Pro-1722471076528.jpeg" alt="header">
-
-<img src="./imagens/readme/responsividade.png" alt="responsividade">
+<img src="./public/readme/mockup.png" alt="mockup">
 
 ## 🔗 Deploy
 
 Clique e acesse o projeto
 
 <div align="left">
- <a href="https://joaommsp.github.io/iPhone"><img src="https://skillicons.dev/icons?i=github" height="40" alt="github logo"  /></a>
+ <a href="https://johns-burger.vercel.app/"><img src="https://skillicons.dev/icons?i=vercel" height="40" alt="Vercel logo"  /></a>
+</div>
+
+## ⭐ Metas
+
+- [x] Uma página viva e elegante
+- [x] Design Responsivo
+- [x] Deploy no Vercel
+- [x] Utilização do BootStrap
+
+## 🛠️ BootStrap
+
+<p>Para quem ainda não conhece , recomendo muito conhecer o Bootstrap, é fácil de aprender e usar. Ele oferece uma ampla gama de componentes prontos, como botões, formulários, e barras de navegação, que você pode simplesmente adicionar ao seu projeto sem escrever muito código.<p>
+
+## ⚠️ Única desvantagem
+
+<p>Os componentes padrão do Bootstrap são amplamente utilizados, o que pode fazer com que seu site tenha uma aparência genérica e similar a muitos outros sites. Personalizar os componentes para criar um design único pode exigir um esforço adicional.</p>
+
+Clique e acesse a documentação
+
+<div align="left">
+ <a href="https://getbootstrap.com/docs/5.3/getting-started/introduction/"><img src="./public/readme/Bootstrap_logo.svg.png" height="40" alt="Vercel logo"  /></a>
 </div>
 
 ## 🤓 Me acompanhe para mais projetos
